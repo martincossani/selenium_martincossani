@@ -1,1 +1,3 @@
 Este es el ejercicio del practico 2
+
+Se actualiza el archivo del practico 2
