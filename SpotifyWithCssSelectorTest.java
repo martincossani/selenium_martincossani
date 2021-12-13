@@ -36,7 +36,10 @@ public class SpotifyWithCssSelectorTest {
 
         driver.findElement(By.cssSelector("[placeholder='AAAA']")).sendKeys("2021");
 
-        //Me esta faltando la parte del combobox con cssSelector, no estoy encontrando de que manera seleccionarlo
+        WebElement sexMale = driver.findElement(By.xpath("//span[contains(text(),'Hombre')]"));
+        sexMale.click();
+
+        /*
         List<WebElement> sexElement = driver.findElements(By.cssSelector("[name='gender']"));
         System.out.println("--> Se encontraron elementos: " + sexElement.size());
 
@@ -44,10 +47,10 @@ public class SpotifyWithCssSelectorTest {
         sexRadioButton.click();
 
         Assert.assertFalse(sexElement.isEmpty(), "Error: la lista deberia contener elementos!!");
-        Assert.assertEquals(sexElement.size(),3,"Error: la lista deberia tener 2 elementos");
+        Assert.assertEquals(sexElement.size(),3,"Error: la lista deberia tener 2 elementos");*/
 
-        /*driver.findElement(By.cssSelector("[name='marketing']")).click();
-        driver.findElement(By.cssSelector("[name='thirdParty']")).click();*/
+        //driver.findElement(By.cssSelector("[name='marketing']")).click();
+        //driver.findElement(By.cssSelector("[name='thirdParty']")).click();
 
     }
 }
